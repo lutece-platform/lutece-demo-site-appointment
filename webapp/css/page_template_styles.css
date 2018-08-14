@@ -1,0 +1,416 @@
+/******************************************
+/* SPECIFIC LUTECE DEFAULT THEME STYLES   *
+******************************************/
+
+@font-face {
+	font-family:"Montserrat";
+	src:url('../fonts/Montserrat-Light-webfont.eot');
+	src:url('../fonts/Montserrat-Light-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Montserrat-Light-webfont.woff2') format('woff2'),url('../fonts/Montserrat-Light-webfont.woff') format('woff'),url('../fonts/Montserrat-Light-webfont.ttf') format('truetype'),url('../fonts/Montserrat-Light-webfont.svg#montserratregular') format('svg');
+	font-weight:300;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:"Montserrat";
+	src:url('../fonts/Montserrat-Regular-webfont.eot');
+	src:url('../fonts/Montserrat-Regular-webfont.eot?#iefix') format('embedded-opentype'),url('../fonts/Montserrat-Regular-webfont.woff2') format('woff2'),url('../fonts/Montserrat-Regular-webfont.woff') format('woff'),url('../fonts/Montserrat-Regular-webfont.ttf') format('truetype'),url('../fonts/Montserrat-Regular-webfont.svg#montserratregular') format('svg');
+	font-weight:500;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:"Montserrat";
+	src:url('../fonts/Montserrat-Bold-webfont.eot');
+	src:url('../fonts/Montserrat-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+	    url('../fonts/Montserrat-Bold-webfont.woff2') format('woff2'),url('../fonts/Montserrat-Bold-webfont.woff') format('woff'),url('../fonts/Montserrat-Bold-webfont.ttf') format('truetype'),url('../fonts/Montserrat-Bold-webfont.svg#montserratbold') format('svg');
+	font-weight:700;
+	font-style:normal;
+}
+
+/* CORE STYLES */
+/* Fix for fixed-nav-bar*/
+html {position:relative; min-height:100%;}
+body {min-height:100%; height:100%; padding-top:60px; font-family:"Montserrat"; font-weight:300; font-size:18px;}
+
+/*** FOOTER ***/
+.footer{margin:0px auto;}
+footer {background-color:#e6e6e6; padding-top:15px; padding-bottom:15px; position:absolute; bottom:0; width:100%; font-size:14px;}
+footer ul {list-style-type:none; padding:0; margin:0;}
+footer ul li a{display:block; text-decoration:none; color:#333;}
+footer ul li a:focus, footer ul li a:hover{color:#333; text-decoration:underline;}
+
+/*** ALERTS ***/
+.alert {
+	border-radius: 3px;
+	background-image: none;
+	box-shadow: none;
+}
+
+/* STEPS */
+.currentStepTitleRow {background-color:#0c518a;}
+.nextStepTitleRow {background-color:#fff;}
+.currentStepTitleRow .container::after {display:block; content:''; width:0; height:0; position:absolute; border-top:16px solid #0c518a; border-bottom:15px solid transparent; border-left:30px solid transparent; border-right:30px solid transparent; left:50%; bottom:-30px; margin-left:-30px;}
+h2.stepTitle{font-weight:700; font-size:22px; color:#fff; margin:15px 0;}
+h2.stepTitle.current {color:#fff;}
+h2.stepTitle.next {color:#0c518a;}
+.stepTitleNumber {border:2px solid #fff; border-radius:100%; margin:0 20px 0 0; width:35px; height:35px; display:inline-block; text-align:center; line-height:31px;}
+.stepTitleNumber.current {border-color:#fff;}
+.stepTitleNumber.next{border-color:#0c518a;}
+.stepTitleNumber.previous{background-color:#0c518a; border-color:#0c518a; color:#fff;}
+.currentStepContentRow {background-color:#f2f2f2; padding: 30px 0;}
+.nextStepTitleRow {border-top:1px solid #b9d2ce;}
+.formGroupContainer {border:1px solid #c7c3c3; background-color:#fff; border-radius:5px; padding:20px 25px 15px 25px; margin-top:20px;}
+legend, .lead {font-weight:700; font-size:20px; border:none;}
+.lead {}
+.control-label, label {color:#0c518a; font-size:16px; font-weight:normal;}
+.helpText {color:#747677; font-size:14px;}
+.helpBox {background:#fee367; padding:20px; border-radius:7px; font-size:1.3rem; z-index:1;}
+.helpBox::after {border:solid transparent; content:""; height:0; width:0; position:absolute; pointer-events:none; border-color:rgba(254,227,103,0); border-width:12px;}
+ul.recap-step-list {margin-top:15px;}
+ul.recap-step-list, ul.recap-step-list li, ul.recap-step-list ul {list-style:none; padding-left:0;}
+ul.recap-step-list > li {font-weight:700; font-size:20px;}
+ul.recap-step-list > ul > li {padding:0;}
+
+/* FORMS */
+input[type="text"], input[type="password"], input[type="number"], .ui-autocomplete-input, textarea, .uneditable-input {
+border:1px solid #ccc; border-radius:5px; font-size:18px!important; padding:5px 10px!important; color:#555;}
+.form-control {height:45px;}
+.has-error .form-control {border-color:#df225a;}
+.has-error .checkbox, .has-error .checkbox-inline, .has-error .control-label, .has-error .help-block, .has-error .radio, .has-error .radio-inline, .has-error.checkbox label, .has-error.checkbox-inline label, .has-error.radio label, .has-error.radio-inline label {color: #df225a;}
+.help-block {font-size:85%; font-weight:400;}
+
+/* CAPTCHA */
+#j_captcha_response {height:50px;}
+.jcaptchaframe { min-height:100px!important; height:100px!important; max-width:100%;}
+.tooltip {width:100%;}
+
+/* Paris.fr */
+h1, h2, h3 {font-family:"Montserrat"; font-weight:normal;}
+h4 {font-family:"Montserrat"; font-weight:normal; font-size:1.5rem;}
+h5, h6 {font-family:"Montserrat"; font-weight:normal; font-size:1.6rem;}
+h1 {font-size:4rem;}
+h5 {font-size:1.8rem; color:#464747; width:85%;}
+a {color:#0c518a; text-decoration:none;}
+a:hover, a:focus {color:#df225a; text-decoration:underline;}
+hr {border-color:#e1e1e1;}
+.container h3 {font-weight:700; border-left:6px solid #f8e273; border-bottom:0px; text-transform:none; font-size:34px; padding:15px 0px 15px 26px; margin:40px 0 0 -30px;}
+.container h4 {font-weight:700; font-size:24px; color:#0a4770; padding:30px 0 15px 0;}
+
+/* NAVBAR */
+.navbar {min-height:60px;}
+.navbar-fixed-top {border-width:0;}
+.navbar-inverse {background-image:none; border-color:transparent; background-color:#0a4770;}
+.site-formulaires .navbar-inverse {background-color:#032d52;}
+.navbar-inverse .navbar-toggle {border-color:transparent; background-color:rgba(255,255,255,0.2);}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {background-color:rgba(0,0,0,0.4);}
+.navbar-toggle {margin:0; border-radius:0; padding:22px;}
+.navbar-collapse, .navbar-form {box-shadow:none;}
+.navbar-collapse {max-height:none;}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav > li > a {text-shadow:none;}
+.navbar-inverse .navbar-nav > li > a {color:#fff; text-decoration:none;}
+.navbar-nav > li > a, .navbar-nav ul > li > a, .mylutece a {font-size:13px; font-weight:500; text-transform:uppercase; position:relative;}
+.nav > li > a {padding:0;}
+.navbar-brand {padding:0;}
+.navbar-brand > img {display:none;}
+.navbar-brand h1 {margin: 0px;}
+.img-paris {background: transparent url("../images/paris.svg") no-repeat scroll center center / contain; display:block; height:100%; position: absolute;}
+.img-nef {background: transparent url("../images/nef.svg") no-repeat scroll center center / contain; display:block; height:100%; position: absolute;}
+.navHeaderHome, .navHeaderInternal {background: url("../images/header.jpg") no-repeat center center; background-size:cover;}
+.navHeaderHome h2, .navHeaderInternal h2 {color:#fff; text-shadow:2px 2px 10px #000; font-weight:700;}
+.navHeaderHome h2 > p, .navHeaderInternal h2 > p {font-size:60%;}
+
+/* BUTTONS */
+.btn {border:medium none; border-radius:5px; color:#fff; cursor:pointer; display:inline-block; font-size:15px; font-weight:500; line-height:20px; overflow:hidden; padding:15px 20px!important; position:relative; text-align:center; text-decoration:none; vertical-align:middle; z-index:1;}
+.btn:after {border-radius:5px; content:""; display:block; height:100%; left:0px; position:absolute; top:0px; transition:width 0.35s ease 0s; width:0px; z-index:-1;}
+.btn:hover:after{width:100%}
+.btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {text-shadow:initial; box-shadow:initial; background-image:initial;}
+
+/*** BUTTON PRIMARY: ROSE ***/
+.btn-primary, .btn-primary:focus, .btn-primary:hover {background-color:#df225a; border-color:transparent; color:#fff!important;}
+.btn-primary:after {background-color:#b41a48;}
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.focus:active, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active {
+color:#fff!important; background-color:#b41a48; border-color:#b41a48;}
+
+/*** BUTTON DEFAULT: BLANC ***/
+.btn-default, .btn-default:focus, .btn-default:hover{background-color:#fff; border-color:transparent; color:#000;}
+.btn-default:after {background-color:#f2f2f2;}
+.btn-default.active.focus, .btn-default.active:focus, .btn-default.active:hover, .btn-default.focus:active, .btn-default:active:focus, .btn-default:active:hover, .open > .dropdown-toggle.btn-default.focus, .open > .dropdown-toggle.btn-default:focus, .open > .dropdown-toggle.btn-default:hover, .btn-default:active {
+color:000; background-color:#f2f2f2; border-color:#f2f2f2;}
+
+/*** BUTTON INFO: BLEU ***/
+.btn-info, .btn-info:focus, .btn-info:hover{background-color:#00a6d6; border-color:transparent; color:#fff!important;}
+.btn-info:after {background-color:#007b9f;}
+.btn-info.active.focus, .btn-info.active:focus, .btn-info.active:hover, .btn-info.focus:active, .btn-info:active:focus, .btn-info:active:hover, .open > .dropdown-toggle.btn-info.focus, .open > .dropdown-toggle.btn-info:focus, .open > .dropdown-toggle.btn-info:hover, .btn-info:active {
+color:#fff!important; background-color:#00a6d6; border-color:#00a6d6;}
+
+/*** BUTTON DANGER: ROSE ***/
+.btn-danger, .btn-danger:focus, .btn-danger:hover{background-color:#dd275c; border-color:transparent; color:#fff!important;}
+.btn-danger:after {background-color:#831837;}
+.btn-danger.active.focus, .btn-danger.active:focus, .btn-danger.active:hover, .btn-danger.focus:active, .btn-danger:active:focus, .btn-danger:active:hover, .open > .dropdown-toggle.btn-danger.focus, .open > .dropdown-toggle.btn-danger:focus, .open > .dropdown-toggle.btn-danger:hover, .btn-danger:active {
+color:#fff!important; background-color:#831837; border-color:#831837;}
+
+/*** BUTTON SUCCESS : VERT ***/
+.btn-success, .btn-success:focus, .btn-success:hover{background-color:#43b57e; border-color:transparent; color:#fff!important;}
+.btn-success.active, .btn-success:active {background-color:#43b57e;}
+.btn-success:after {background-color:#2b7250;}
+.btn-success.active.focus, .btn-success.active:focus, .btn-success.active:hover, .btn-success.focus:active, .btn-success:active:focus, .btn-success:active:hover, .open > .dropdown-toggle.btn-success.focus, .open > .dropdown-toggle.btn-success:focus, .open > .dropdown-toggle.btn-success:hover, .btn-success:active {
+color:#fff!important; background-color:#2b7250; border-color:#2b7250;}
+
+/*** BUTTON WARNING : ORANGE ***/
+.btn-warning, .btn-warning:focus, .btn-warning:hover{background-color:#f77f68; border-color:transparent; color:#fff!important;}
+.btn-warning:after {background-color:#af5949;}
+.btn-warning.active.focus, .btn-warning.active:focus, .btn-warning.active:hover, .btn-warning.focus:active, .btn-warning:active:focus, .btn-warning:active:hover, .open > .dropdown-toggle.btn-warning.focus, .open > .dropdown-toggle.btn-warning:focus, .open > .dropdown-toggle.btn-warning:hover, .btn-warning:active {
+color:#fff!important; background-color:#af5949; border-color:#af5949;}
+
+/* MY LUTECE */
+#account-creation h5 {font-weight:700; font-size:26px; color:#0a4770; padding:10px 0 5px 0; margin:0; width:100%;}
+#account-creation > div > div {margin-bottom:50px;}
+.sousbandeau {padding: 15px 0px; margin-right: auto; margin-left: auto;}
+.cards {height:168px; margin-top:25px;}
+.horizontal-separator {border-color:#c3c3c3;}
+
+/* DATEPICKER POSITIONING HACK */
+.fc-center {
+	position:relative;
+}
+
+#hiddenDate {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 1px;
+    height: 32px; 
+    opacity: 0;
+}
+
+/* CALENDAR TABLES */
+.fc-view-container {
+	padding-bottom:0!important;
+}
+.fc-toolbar {
+	padding:0!important;
+}
+.fc button {
+	height:auto!important;
+}
+th.fc-day-header.ui-widget-header, td.fc-axis.fc-time.ui-widget-content {
+	background-color:rgba(215,215,215,0.3)!important;
+	color:#333!important;
+	border-radius:5px;
+}
+.fc-event {
+  background-color: rgba(125,201,253,0.6) !important;
+	border-radius:5px!important;
+}
+.fc-event:hover {
+  background-color: rgba(125,201,253,1) !important;
+}
+a.fc-event:hover {
+  text-shadow:none!important;
+}
+a.fc-event.slot-full {
+	background-color: rgba(42,42,42,0.3) !important;
+}
+.fc-event, .fc-event:hover, .ui-widget .fc-event {
+	color: #00233a!important;
+}
+.fc-nonbusiness.fc-bgevent {
+	border-radius: 5px;
+}
+td.fc-day.ui-widget-content.fc-today.ui-state-highlight {
+	border:none!important;
+}
+
+.ui-widget-header {background:transparent!important;}
+.fc-ltr .fc-time-grid .fc-event-container {
+    margin: 0 0 0 2px!important;
+}
+
+/* FORM LIST */
+#app-form-list ul {padding:0; margin-top:30px;}
+#app-form-list li {list-style-type:none;}
+.appointment-form-list {background-color:rgba(12,81,138,1); padding:5%; margin-bottom:5%; border-radius:8px; text-align:center; text-transform:uppercase; position:relative; display:block; z-index:1; overflow:hidden; margin:7.5px -7.5px;}
+.appointment-form-list::after {background-color:rgba(0,0,0,0.3); content:""; height:100%; bottom:0px; left:0px; top:0px; transition:width 0.2s ease-in-out 0s; width:0%; z-index:-1; position:absolute; display:block;}
+.appointment-form-list:hover::after {width:100%;}
+.appointment-form-list img {max-width:100%; max-height:190px;}
+.appointment-form-list a {color:#fff;}
+
+/* PAGE CARTO */
+#searchForm legend {margin:0 0 2px 0;}
+#advanced_search_button > i {cursor:pointer;}
+#occupancyRate {background-color:#e2e2e2;}
+#tgSearchForm {position:absolute;}
+.leaflet-container {font:14px/1.5 "Montserrat",sans-serif!important;}
+.leaflet-container > #tgSearchForm {color:#fff; font-family:inherit!important; font-size:initial!important; line-height:initial!important;}
+.leaflet-div-icon {background:none!important; border:none!important;}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {background: rgba(255,255,255,0.9)!important;}
+.leaflet-popup-content-wrapper {border-radius:4px!important;}
+.leaflet-marker-icon > .number {color:#000; text-shadow:2px 1px 1px #fff; background:rgba(255,255,255,0.8); border-radius:50%; width:25px; height:20px; padding:2px; text-align:center; font-size:80%; display:none;}
+.marker-cluster-small {background-color: rgba(128, 254, 184, 0.6)!important;}
+.marker-cluster-small div {background-color: rgba(9, 255, 119, 0.6)!important;}
+.marker-cluster div {font:12px "Montserrat",sans-serif!important;}
+#marker_popup a.btn {margin-top:15px;}
+#marker_popup a {color:#df225a; font-size:120%;}
+#marker_popup a:hover {text-decoration:underline; text-shadow:none;}
+#marker_popup a:focus {text-shadow:none;}
+#marker_popup h2 {font-size:20px; margin-bottom:0px;}
+#marker_popup p:first-of-type {margin:5px 0 25px 0; font-size:90%;}
+#marker_popup p:nth-of-type(2) {margin:0 0 5px 0;}
+#marker_popup p:nth-of-type(3) {color:#df225a;}
+
+
+.nextAvailableAppointments {padding-top: 5px; margin-top:15px;}
+.nextAvailableAppointments > div {border-color:rgba(12,81,138,1); border-style:solid; border-width:1px; border-radius:5px; margin-bottom:15px; font-size:1.5rem; display:flex; flex-wrap:wrap; justify-content: space-between;}
+.nextAvailableAppointments > div h4{color:#fff; font-size:2rem; padding:0; margin:0;}
+.nextAvailableAppointments > div > div {padding:15px; border-color:rgba(12,81,138,1); border-style:solid; border-width:0;display:flex; flex-wrap:wrap; justify-content:space-between;}
+.nextAvailableAppointments > div > div:first-of-type {background-color: rgba(12,81,138,1); width:100%;}
+.nextAvailableAppointments > div > div > div:last-of-type {align-self:flex-end;}
+.nextAvailableAppointments ul {list-style-type:none; padding:0 0 0 15px;}
+.nextAvailableAppointments ul li {margin:0;}
+.emphasize_default {color:#1c1c1c; font-weight:400;}
+
+
+/*==================================================
+
+=            Bootstrap 3 Media Queries             =
+
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+.navbar-form {display:none;}
+.navbar-nav > li {padding: 18px 10px;}
+.navbar-nav > li > a:after {display:block; position:absolute; left:0; width:0; height:1px; transition:width 0.3s ease 0s; background-color:#fff; content:""; bottom:0;}
+.navbar-nav > li > a:hover {color:#fff; text-decoration:none;}
+.navbar-nav > li > a:hover:after{width:100%;}
+
+.navbar-nav {float: right;}
+.navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {/* margin-right:15px; */}
+.navbar-brand {transform:translateY(0px); border-bottom:0px none; width:285px; left: 15px; position: absolute; width:185px; transition: transform 0.2s ease 0s; background-color:unset; border-bottom: 4px solid #f8e273; display:block; margin:0px auto; overflow:hidden; position:relative; text-align:center; z-index:10; height:60px;}
+.img-paris h1 {margin: 0px;}
+.img-paris {background-position:50% 60%; width:140px; right:0px; text-indent:-9999px;}
+.img-nef { background-position:50% 60%; width:33px; left: 0px;}
+.form-horizontal .control-label {text-align:left;}
+
+.container.recap {margin-bottom:40px;}
+.mobile {display:none;}
+.helpBox {position:absolute; top:40px}
+.helpBox::after {/* right:100%; top:50%; border-right-color:#fee367; margin-top:-12px; */}
+
+.appointment-form-list {min-height:340px;}
+
+/* PAGE CARTO */
+.nextAvailableAppointments {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.nextAvailableAppointments > div {
+	width:49%;
+}
+
+/*** FORM SITES FOOTER ***/
+.container-fluid {margin-bottom:30px;}
+footer {height:50px;}
+footer ul li{padding-left:5px;}
+footer ul li a{float:left; margin-left:20px;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+#tgSearchForm {
+    bottom: calc(50% - 20px);
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+.nextAvailableAppointments > div {
+	width:32.8%;
+}
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+.navHeaderHome h2, .navHeaderInternal h2 {font-size:70px;}
+.navHeaderHome, .navHeaderInternal {height:310px; padding:45px 0;}
+}
+
+@media only screen and (min-width : 1400px) {
+body {padding-top:80px;}
+.navbar {min-height:80px;}
+.navbar-header {position:absolute; left:calc(50% - 650px);}
+.navbar-brand {border-bottom:0px none; width:285px; left:-18px; transform:translateY(10px);}
+.img-nef {background-position:50% 54%; width:42px;}
+.img-nef::after {background-color:#f8e273; content:""; display:block; height:100%; left:68px; position:absolute; width:6px;}
+.img-paris {background-position:50% 54%; width:180px;}
+.navbar-nav > li {padding: 25px 20px;}
+}
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+.navHeaderHome h2, .navHeaderInternal h2 {font-size:35px;}
+.navHeaderHome, .navHeaderInternal {height:165px; padding:30px 0;}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+h1 {font-size:2.5rem;}
+nav > div > div:nth-of-type(2) > div > span {font-size:1.8rem;}
+nav > div > div:nth-of-type(1) > div:nth-of-type(2) {text-align:center;}
+nav > div > div:nth-of-type(2) {margin-top:0;}
+nav.navHeaderHome, nav.navHeaderHome > div {min-height:0;}
+nav.navHeaderInternal, nav.navHeaderInternal > div {min-height:0;}
+.navbar-brand {transition:opacity 0.2s ease 0s; border-bottom:4px solid #f8e273; display:block; height:60px; margin:0px auto 0px calc(50% - 80px); overflow:hidden; position:relative; text-align:center; width:144px; z-index:10;}
+.img-paris {right:0px; text-indent:-9999px; width:106px;}
+.img-nef {left:0px; width:25px;}
+.navbar-collapse {border-top:0px solid transparent;}
+.navbar-nav {margin:0px -15px;}
+.navbar-form {border-top:0px solid transparent; border-bottom:0px solid transparent; background-color:rgba(0,0,0,0.4); margin:0px -15px;}
+.navbar-form .form-control {height:60px; border-radius:4px;}
+.navbar-form .btn-default, .navbar-form .btn-primary, .navbar-form .input-group-btn > .btn, .navbar-form .input-group-addon {border-top-right-radius:4px; border-bottom-right-radius:4px; height:60px;}
+.navHeaderHome h2, .navHeaderInternal h2 {font-size:30px;}
+.navHeaderHome, .navHeaderInternal {height:130px; padding:20px 0;}
+.container h3 {font-size:1.5em;}
+.container h4 {font-size:1.3em;}
+
+.stepRecapButtonMargin {margin:10px 0 30px 0;}
+.helpBox {position:absolute; display:none; left:-45px; right:-45px; bottom:15px;}
+.helpBox.step2_0 {bottom:60px;}
+#msa_helpButton, #mpfdm_helpButton, #ppa_helpButton, #cm_helpButton, #el_helpButton, #vpa_helpButton, #csg_helpButton {top:0; right:-6px;}
+.helpBox::after {top:100%; right:48px; border-top-color:#fee367; margin-left:-12px;}
+.helpBoxButton {position:absolute; right:20px; width:24px; height:24px; background:#fee367; border-radius:100%; text-align:center; font-size:1em; cursor:pointer; margin-right:8px; margin-left:10px; font-weight:700; color:#000; z-index:1;}
+#situation_helpButton{bottom:20px; right:-6px;}
+
+/* Distance to fixed footer */
+.container-fluid {margin-bottom:175px;}
+footer {text-align:center;}
+footer ul li a {padding-top:15px;}
+}
+
+@media screen and (max-width: 560px) {
+.navHeaderHome h2, .navHeaderInternal h2 {font-size:25px;}
+.navHeaderHome, .navHeaderInternal {padding:0;}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+}
+/* Custom, iPhone Retina */ 
+@media only screen and (max-width : 320px) {
+}
