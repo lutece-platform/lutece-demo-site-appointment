@@ -1,0 +1,35 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle hidden" data-toggle="collapse" data-target="#lutece-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+          <div class="img-nef"></div>
+					<h1 class="img-paris">Paris</h1>
+        </a>
+    </div>
+    <div class="collapse navbar-collapse" id="lutece-navbar-collapse">
+        <#assign menu=page_main_menu>
+        <ul class="mylutece">
+            ${pageinclude_userlogin?default("<!-- no myLutece plugin installed -->")}
+        </ul>
+        <ul class="nav navbar-nav">
+            ${page_main_menu_html!menu}
+        </ul>
+	</div>
+</div>
+
+<nav class="navHeaderHome">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2>
+					Formulaires de rendez-vous
+				</h2>
+			</div>
+		</div>
+   </div>
+</nav>
