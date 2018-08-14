@@ -7,7 +7,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.paris.lutece.themes</groupId>
-    <artifactId>lutece-appointment-demo-site</artifactId>
+    <artifactId>site-appointment-demo</artifactId>
     <packaging>lutece-site</packaging>
     <name>Lutece appointment demo site</name>
     <version>1.0.0-SNAPSHOT</version>
@@ -251,7 +251,25 @@
             <artifactId>module-appointment-resource</artifactId>
             <version>2.0.5-SNAPSHOT</version>
             <type>lutece-plugin</type>
-        </dependency> 
+        </dependency>
+         <dependency>
+            <groupId>fr.paris.lutece.plugins</groupId>
+            <artifactId>plugin-mydashboard</artifactId>
+            <version>[1.1.1]</version>
+            <type>lutece-plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>fr.paris.lutece.plugins</groupId>
+            <artifactId>module-appointment-mydashboard</artifactId>
+            <version>2.0.1</version>
+            <type>lutece-plugin</type>
+        </dependency>
+        <dependency>
+            <groupId>fr.paris.lutece.plugins</groupId>
+            <artifactId>module-mydashboard-mylutecedatabase</artifactId>
+            <version>1.0.0</version>
+            <type>lutece-plugin</type>
+        </dependency>
     </dependencies>
     <properties>
         <lutece.plugin.version>4.0.2-SNAPSHOT</lutece.plugin.version>
