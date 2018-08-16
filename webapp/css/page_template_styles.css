@@ -113,14 +113,14 @@ hr {border-color:#e1e1e1;}
 .navbar-brand {padding:0;}
 .navbar-brand > img {display:none;}
 .navbar-brand h1 {margin: 0px;}
-.img-paris {background: transparent url("../images/paris.svg") no-repeat scroll center center / contain; display:block; height:100%; position: absolute;}
-.img-nef {background: transparent url("../images/nef.svg") no-repeat scroll center center / contain; display:block; height:100%; position: absolute;}
+.img-paris {background: transparent url("../images/lutece.png") no-repeat scroll center center / contain; display:block; height:100%; position: absolute;}
+.img-nef {background: transparent url("../images/university.png") no-repeat scroll center center / contain; display:block; height:100%; position: absolute;}
 .navHeaderHome, .navHeaderInternal {background: url("../images/header.jpg") no-repeat center center; background-size:cover;}
 .navHeaderHome h2, .navHeaderInternal h2 {color:#fff; text-shadow:2px 2px 10px #000; font-weight:700;}
 .navHeaderHome h2 > p, .navHeaderInternal h2 > p {font-size:60%;}
 
 /* BUTTONS */
-.btn {border:medium none; border-radius:5px; color:#fff; cursor:pointer; display:inline-block; font-size:15px; font-weight:500; line-height:20px; overflow:hidden; padding:15px 20px!important; position:relative; text-align:center; text-decoration:none; vertical-align:middle; z-index:1;}
+.btn {border:medium none; border-radius:5px; color:#fff; cursor:pointer; display:inline-block; font-size:15px; font-weight:500; line-height:20px; overflow:hidden; padding:15px 20px; position:relative; text-align:center; text-decoration:none; vertical-align:middle; z-index:1;}
 .btn:after {border-radius:5px; content:""; display:block; height:100%; left:0px; position:absolute; top:0px; transition:width 0.35s ease 0s; width:0px; z-index:-1;}
 .btn:hover:after{width:100%}
 .btn-danger, .btn-default, .btn-info, .btn-primary, .btn-success, .btn-warning {text-shadow:initial; box-shadow:initial; background-image:initial;}
@@ -227,6 +227,9 @@ td.fc-day.ui-widget-content.fc-today.ui-state-highlight {
     margin: 0 0 0 2px!important;
 }
 
+.fc button {padding:15px 20px!important;}
+.ui-state-hover {border:none!important; background:none!important;}
+
 /* FORM LIST */
 #app-form-list ul {padding:0; margin-top:30px;}
 #app-form-list li {list-style-type:none;}
@@ -294,6 +297,12 @@ td.fc-day.ui-widget-content.fc-today.ui-state-highlight {
 .navbar-nav > li > a:hover {color:#fff; text-decoration:none;}
 .navbar-nav > li > a:hover:after{width:100%;}
 
+.mylutece {float:right; list-style-type:none; margin:0;}
+.mylutece > li {display:inline-block; height:60px; background-color:rgba(0,0,0,0.4); margin:-2px; padding-top:16px;}
+.mylutece > li:hover {background-color:rgba(0,0,0,0.2);}
+.mylutece > li > a {color:#fff; padding:30px;}
+.mylutece > li > a:hover, .mylutece > li > a:focus, .mylutece > li > a:visited {text-decoration:none;}
+
 .navbar-nav {float: right;}
 .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {/* margin-right:15px; */}
 .navbar-brand {transform:translateY(0px); border-bottom:0px none; width:285px; left: 15px; position: absolute; width:185px; transition: transform 0.2s ease 0s; background-color:unset; border-bottom: 4px solid #f8e273; display:block; margin:0px auto; overflow:hidden; position:relative; text-align:center; z-index:10; height:60px;}
@@ -354,6 +363,7 @@ body {padding-top:80px;}
 .img-nef::after {background-color:#f8e273; content:""; display:block; height:100%; left:68px; position:absolute; width:6px;}
 .img-paris {background-position:50% 54%; width:180px;}
 .navbar-nav > li {padding: 25px 20px;}
+.mylutece > li {height:80px; padding-top:26px;}
 }
 
 /*==========  Non-Mobile First Method  ==========*/
