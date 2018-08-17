@@ -326,6 +326,7 @@ td.fc-day.ui-widget-content.fc-today.ui-state-highlight {
 }
 
 .nextAvailableAppointments > div {
+	
 	width:49%;
 }
 
@@ -334,6 +335,7 @@ td.fc-day.ui-widget-content.fc-today.ui-state-highlight {
 footer {height:50px;}
 footer ul li{padding-left:5px;}
 footer ul li a{float:left; margin-left:20px;}
+footer ul li:first-of-type a{margin-left:-10px;}
 }
 
 /* Medium Devices, Desktops */
