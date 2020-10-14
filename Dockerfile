@@ -13,7 +13,7 @@ RUN mvn lutece:site-assembly
 # change default user
 RUN  sed -i 's/root/admin/' /app/target/${site}/WEB-INF/conf/db.properties
 
-RUN mv /app/target/${site}/ /var/lib/tomcat8/webapps/appointment
+RUN mv /app/target/${site}/ /var/lib/tomcat9/webapps/appointment
 
 # run the database initialization script
 RUN  /etc/init.d/mysql start && \
