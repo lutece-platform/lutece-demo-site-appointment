@@ -68,16 +68,16 @@ Connect to the back office with login/pwd : admin/appointment
    | plugin-sitelabels                        |  1.1.2  |    No     | Usefull to manage dynamic labels on static pages      |
    | plugin-html                              |  4.0.1  |    No     | Usefull to create some content in the site  |
    | plugin-solr                              |  3.1.2  |    Yes    |      |
-   | plugin-solrserver                        |  3.0.0  |    Yes    |      |
-   | plugin-appointment                       |  2.1.0  |    Yes    |  |
+   | plugin-solrserver                        |  3.0.0  |    Yes    | An embedded SolR server     |
+   | plugin-appointment                       |  2.1.0  |    Yes    | The Appointment main application  |
    | module-appointment-solrsearchapp         |  2.0.5  |    Yes    |      |
    | module-appointment-solr                  |  2.0.4  |    Yes    |      |
-   | module-workflow-appointment              |  2.0.8  |    Yes    |      |
+   | module-workflow-appointment              |  2.0.8  |    Yes    |  Specific Workflow tasks for appointement management    |
    | module-appointment-alert                 |  2.0.2  |    Yes    |      |
    | module-appointment-filling               |  2.0.3  |    Yes    |      |
    | module-appointment-leaflet               |  2.0.3  |    Yes    |      |
    | module-appointment-resource              |  2.0.5  |    Yes    |      |
-   | plugin-mydashboard                       |  1.0.1  |    Yes    |      |
+   | plugin-mydashboard                       |  1.0.1  |    Yes    |  A Front Office Dashboard for the user    |
    | module-appointment-mydashboard           |  2.0.1  |    Yes    |      |
    | module-mydashboard-mylutecedatabase      |  1.0.0  |    Yes    |      |
    | plugin-address                           |  1.0.6  |    Yes    |      |
