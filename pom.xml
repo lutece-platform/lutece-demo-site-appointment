@@ -196,4 +196,9 @@
     <properties>  
         <jiraProjectName>RDVDEMO</jiraProjectName>
     </properties>
+    <scm>
+        <connection>scm:git:https://github.com/lutece-platform/lutece-demo-site-appointment.git</connection>
+        <developerConnection>scm:git:https://github.com/lutece-platform/lutece-demo-site-appointment.git</developerConnection>
+        <url>https://github.com/lutece-platform/lutece-demo-site-appointment.git</url>
+    </scm>
 </project>
